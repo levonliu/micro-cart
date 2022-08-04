@@ -1,11 +1,11 @@
 package handler
 
 import (
-	"cart/common"
-	"cart/domain/model"
-	"cart/domain/service"
-	"cart/proto/cart"
 	"context"
+	"go.micro.service.cart/common"
+	"go.micro.service.cart/domain/model"
+	"go.micro.service.cart/domain/service"
+	"go.micro.service.cart/proto/cart"
 )
 
 type Cart struct {

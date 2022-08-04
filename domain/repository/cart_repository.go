@@ -1,9 +1,9 @@
 package repository
 
 import (
-	"cart/domain/model"
 	"errors"
 	"github.com/jinzhu/gorm"
+	"go.micro.service.cart/domain/model"
 )
 
 type ICartRepository interface {

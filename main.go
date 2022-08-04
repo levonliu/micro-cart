@@ -1,11 +1,6 @@
 package main
 
 import (
-	"cart/common"
-	"cart/domain/repository"
-	service2 "cart/domain/service"
-	"cart/handler"
-	"cart/proto/cart"
 	"fmt"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
@@ -16,6 +11,11 @@ import (
 	ratelimit "github.com/micro/go-plugins/wrapper/ratelimiter/uber/v2"
 	opentracing2 "github.com/micro/go-plugins/wrapper/trace/opentracing/v2"
 	"github.com/opentracing/opentracing-go"
+	"go.micro.service.cart/common"
+	"go.micro.service.cart/domain/repository"
+	service2 "go.micro.service.cart/domain/service"
+	"go.micro.service.cart/handler"
+	"go.micro.service.cart/proto/cart"
 )
 
 var QPS = 100
@@ -57,10 +57,10 @@ func main() {
 	db.SingularTable(true)
 
 	//初始化表
-	err = repository.NewCartRepository(db).InitTable()
-	if err != nil {
-		logger.Error(err)
-	}
+	//err = repository.NewCartRepository(db).InitTable()
+	//if err != nil {
+	//	logger.Error(err)
+	//}
 
 	// Create service
 	service := micro.NewService(
