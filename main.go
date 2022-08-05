@@ -64,7 +64,7 @@ func main() {
 
 	// Create service
 	service := micro.NewService(
-		micro.Name("github.com/levonliu/micro-cart"),
+		micro.Name("micro.service.cart"),
 		micro.Version("latest"),
 		//设置地址和需要暴露的端口
 		micro.Address("127.0.0.1:8087"),
