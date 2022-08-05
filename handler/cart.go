@@ -2,10 +2,10 @@ package handler
 
 import (
 	"context"
-	"go.micro.service.cart/common"
-	"go.micro.service.cart/domain/model"
-	"go.micro.service.cart/domain/service"
-	"go.micro.service.cart/proto/cart"
+	"github.com/levonliu/micro-cart/common"
+	"github.com/levonliu/micro-cart/domain/model"
+	"github.com/levonliu/micro-cart/domain/service"
+	"github.com/levonliu/micro-cart/proto/cart"
 )
 
 type Cart struct {

@@ -3,7 +3,7 @@ package repository
 import (
 	"errors"
 	"github.com/jinzhu/gorm"
-	"go.micro.service.cart/domain/model"
+	"github.com/levonliu/micro-cart/domain/model"
 )
 
 type ICartRepository interface {

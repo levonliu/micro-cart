@@ -1,4 +1,4 @@
-module go.micro.service.cart
+module github.com/levonliu/micro-cart
 
 go 1.16
 

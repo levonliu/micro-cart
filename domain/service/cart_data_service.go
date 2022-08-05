@@ -1,8 +1,8 @@
 package service
 
 import (
-	"go.micro.service.cart/domain/model"
-	"go.micro.service.cart/domain/repository"
+	"github.com/levonliu/micro-cart/domain/model"
+	"github.com/levonliu/micro-cart/domain/repository"
 )
 
 type ICartDataService interface {

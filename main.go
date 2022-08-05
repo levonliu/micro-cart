@@ -4,6 +4,11 @@ import (
 	"fmt"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
+	"github.com/levonliu/micro-cart/common"
+	"github.com/levonliu/micro-cart/domain/repository"
+	service2 "github.com/levonliu/micro-cart/domain/service"
+	"github.com/levonliu/micro-cart/handler"
+	"github.com/levonliu/micro-cart/proto/cart"
 	"github.com/micro/go-micro/v2"
 	"github.com/micro/go-micro/v2/logger"
 	"github.com/micro/go-micro/v2/registry"
@@ -11,11 +16,6 @@ import (
 	ratelimit "github.com/micro/go-plugins/wrapper/ratelimiter/uber/v2"
 	opentracing2 "github.com/micro/go-plugins/wrapper/trace/opentracing/v2"
 	"github.com/opentracing/opentracing-go"
-	"go.micro.service.cart/common"
-	"go.micro.service.cart/domain/repository"
-	service2 "go.micro.service.cart/domain/service"
-	"go.micro.service.cart/handler"
-	"go.micro.service.cart/proto/cart"
 )
 
 var QPS = 100
@@ -37,7 +37,7 @@ func main() {
 	)
 
 	//链路追踪
-	tracer, io, err := common.NewTracer("go.micro.service.cart", "localhost:6831")
+	tracer, io, err := common.NewTracer("github.com/levonliu/micro-cart", "localhost:6831")
 	if err != nil {
 		logger.Fatal(err)
 	}
@@ -64,7 +64,7 @@ func main() {
 
 	// Create service
 	service := micro.NewService(
-		micro.Name("go.micro.service.cart"),
+		micro.Name("github.com/levonliu/micro-cart"),
 		micro.Version("latest"),
 		//设置地址和需要暴露的端口
 		micro.Address("127.0.0.1:8087"),

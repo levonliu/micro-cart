@@ -525,29 +525,29 @@ func file_proto_cart_cart_proto_rawDescGZIP() []byte {
 
 var file_proto_cart_cart_proto_msgTypes = make([]protoimpl.MessageInfo, 8)
 var file_proto_cart_cart_proto_goTypes = []interface{}{
-	(*CartInfo)(nil),    // 0: go.micro.service.cart.CartInfo
-	(*ResponseAdd)(nil), // 1: go.micro.service.cart.ResponseAdd
-	(*Clean)(nil),       // 2: go.micro.service.cart.Clean
-	(*Response)(nil),    // 3: go.micro.service.cart.Response
-	(*Item)(nil),        // 4: go.micro.service.cart.Item
-	(*CarID)(nil),       // 5: go.micro.service.cart.CarID
-	(*CartFindAll)(nil), // 6: go.micro.service.cart.CartFindAll
-	(*CartAll)(nil),     // 7: go.micro.service.cart.CartAll
+	(*CartInfo)(nil),    // 0: github.com/levonliu/micro-cart.CartInfo
+	(*ResponseAdd)(nil), // 1: github.com/levonliu/micro-cart.ResponseAdd
+	(*Clean)(nil),       // 2: github.com/levonliu/micro-cart.Clean
+	(*Response)(nil),    // 3: github.com/levonliu/micro-cart.Response
+	(*Item)(nil),        // 4: github.com/levonliu/micro-cart.Item
+	(*CarID)(nil),       // 5: github.com/levonliu/micro-cart.CarID
+	(*CartFindAll)(nil), // 6: github.com/levonliu/micro-cart.CartFindAll
+	(*CartAll)(nil),     // 7: github.com/levonliu/micro-cart.CartAll
 }
 var file_proto_cart_cart_proto_depIdxs = []int32{
-	0, // 0: go.micro.service.cart.CartAll.cart_info:type_name -> go.micro.service.cart.CartInfo
-	0, // 1: go.micro.service.cart.Cart.AddCart:input_type -> go.micro.service.cart.CartInfo
-	2, // 2: go.micro.service.cart.Cart.CleanCart:input_type -> go.micro.service.cart.Clean
-	4, // 3: go.micro.service.cart.Cart.Incr:input_type -> go.micro.service.cart.Item
-	4, // 4: go.micro.service.cart.Cart.Decr:input_type -> go.micro.service.cart.Item
-	5, // 5: go.micro.service.cart.Cart.DeleteItemByID:input_type -> go.micro.service.cart.CarID
-	6, // 6: go.micro.service.cart.Cart.GetAll:input_type -> go.micro.service.cart.CartFindAll
-	1, // 7: go.micro.service.cart.Cart.AddCart:output_type -> go.micro.service.cart.ResponseAdd
-	3, // 8: go.micro.service.cart.Cart.CleanCart:output_type -> go.micro.service.cart.Response
-	3, // 9: go.micro.service.cart.Cart.Incr:output_type -> go.micro.service.cart.Response
-	3, // 10: go.micro.service.cart.Cart.Decr:output_type -> go.micro.service.cart.Response
-	3, // 11: go.micro.service.cart.Cart.DeleteItemByID:output_type -> go.micro.service.cart.Response
-	7, // 12: go.micro.service.cart.Cart.GetAll:output_type -> go.micro.service.cart.CartAll
+	0, // 0: github.com/levonliu/micro-cart.CartAll.cart_info:type_name -> github.com/levonliu/micro-cart.CartInfo
+	0, // 1: github.com/levonliu/micro-cart.Cart.AddCart:input_type -> github.com/levonliu/micro-cart.CartInfo
+	2, // 2: github.com/levonliu/micro-cart.Cart.CleanCart:input_type -> github.com/levonliu/micro-cart.Clean
+	4, // 3: github.com/levonliu/micro-cart.Cart.Incr:input_type -> github.com/levonliu/micro-cart.Item
+	4, // 4: github.com/levonliu/micro-cart.Cart.Decr:input_type -> github.com/levonliu/micro-cart.Item
+	5, // 5: github.com/levonliu/micro-cart.Cart.DeleteItemByID:input_type -> github.com/levonliu/micro-cart.CarID
+	6, // 6: github.com/levonliu/micro-cart.Cart.GetAll:input_type -> github.com/levonliu/micro-cart.CartFindAll
+	1, // 7: github.com/levonliu/micro-cart.Cart.AddCart:output_type -> github.com/levonliu/micro-cart.ResponseAdd
+	3, // 8: github.com/levonliu/micro-cart.Cart.CleanCart:output_type -> github.com/levonliu/micro-cart.Response
+	3, // 9: github.com/levonliu/micro-cart.Cart.Incr:output_type -> github.com/levonliu/micro-cart.Response
+	3, // 10: github.com/levonliu/micro-cart.Cart.Decr:output_type -> github.com/levonliu/micro-cart.Response
+	3, // 11: github.com/levonliu/micro-cart.Cart.DeleteItemByID:output_type -> github.com/levonliu/micro-cart.Response
+	7, // 12: github.com/levonliu/micro-cart.Cart.GetAll:output_type -> github.com/levonliu/micro-cart.CartAll
 	7, // [7:13] is the sub-list for method output_type
 	1, // [1:7] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name
